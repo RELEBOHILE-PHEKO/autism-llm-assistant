@@ -10,12 +10,12 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import PeftModel
 
 MODEL_NAME = "google/gemma-2b-it"
-ADAPTER_PATH = "autism_guidance_gemma_2b"
+ADAPTER_PATH = "Rele22/autism-guidance-gemma-2b"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Load tokenizer
 print("Loading tokenizer...")
-tokenizer = AutoTokenizer.from_pretrained(ADAPTER_PATH)
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = 'right'
 
