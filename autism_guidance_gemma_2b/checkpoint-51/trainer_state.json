@@ -1,0 +1,65 @@
+{
+  "best_global_step": 51,
+  "best_metric": 4.906501770019531,
+  "best_model_checkpoint": "autism_guidance_gemma_2b/checkpoint-51",
+  "epoch": 1.0,
+  "eval_steps": 500,
+  "global_step": 51,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "entropy": 1.289079786837101,
+      "epoch": 0.3995006242197253,
+      "grad_norm": 0.38671875,
+      "learning_rate": 9.494758705426978e-06,
+      "loss": 6.241352462768555,
+      "mean_token_accuracy": 0.3332999227102846,
+      "num_tokens": 24091.0,
+      "step": 20
+    },
+    {
+      "entropy": 1.4508284252136945,
+      "epoch": 0.7990012484394506,
+      "grad_norm": 0.41796875,
+      "learning_rate": 7.262735145222696e-06,
+      "loss": 5.418450927734375,
+      "mean_token_accuracy": 0.3604492795653641,
+      "num_tokens": 48708.0,
+      "step": 40
+    },
+    {
+      "epoch": 1.0,
+      "eval_entropy": 1.6479011908006131,
+      "eval_loss": 4.906501770019531,
+      "eval_mean_token_accuracy": 0.39108714126469046,
+      "eval_num_tokens": 60813.0,
+      "eval_runtime": 8.3079,
+      "eval_samples_per_second": 10.713,
+      "eval_steps_per_second": 10.713,
+      "step": 51
+    }
+  ],
+  "logging_steps": 20,
+  "max_steps": 102,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 2,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 726723951390720.0,
+  "train_batch_size": 1,
+  "trial_name": null,
+  "trial_params": null
+}
