@@ -1,12 +1,12 @@
-# 🧩 Early Autism Screening Guidance Chatbot
+# Early Autism Screening Guidance Chatbot
 
 A domain-specific LLM assistant fine-tuned to provide educational guidance on early autism screening, developmental milestones, and support resources for caregivers, teachers, and healthcare workers.
 
-> **⚠️ MEDICAL DISCLAIMER**: This is an educational tool only. It does **NOT** provide medical diagnoses. Always consult licensed healthcare professionals for concerns about child development.
+> **MEDICAL DISCLAIMER**: This is an educational tool only. It does **NOT** provide medical diagnoses. Always consult licensed healthcare professionals for concerns about child development.
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 - **Model**: `google/gemma-2b-it` (Gemma 2B Instruct)
 - **Fine-tuning Method**: QLoRA (4-bit quantization + LoRA adapters)
@@ -17,7 +17,7 @@ A domain-specific LLM assistant fine-tuned to provide educational guidance on ea
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. **Generate the Dataset**
 
@@ -62,7 +62,7 @@ The Gradio interface will launch at `http://localhost:7860`.
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 autism-llm-assistant/
@@ -85,9 +85,9 @@ autism-llm-assistant/
 
 ---
 
-## 🎯 Features
+##  Features
 
-### ✅ Domain Expertise
+###  Domain Expertise
 - Trained on 890+ expert-level Q&A pairs
 - Covers early signs, screening tools, milestones, myths vs facts
 - Provides age-appropriate guidance (infants, toddlers, preschoolers)
@@ -97,7 +97,7 @@ autism-llm-assistant/
 2. **Domain Filtering**: Redirects off-topic questions back to autism/child development
 3. **Medical Disclaimer**: Appended to every response
 
-### 🎨 User-Friendly Interface
+###  User-Friendly Interface
 - Multi-turn conversation history
 - Pre-loaded example questions
 - Links to authoritative resources (CDC, M-CHAT, Autism Speaks)
@@ -105,7 +105,7 @@ autism-llm-assistant/
 
 ---
 
-## 📊 Dataset Details
+##  Dataset Details
 
 **Format**: JSONL with `instruction`, `input`, `output` fields
 
@@ -160,7 +160,7 @@ Uses Gemma's official format:
 
 ---
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 The notebook includes comprehensive evaluation:
 
@@ -182,19 +182,19 @@ Typical improvements after fine-tuning:
 
 This chatbot is designed for:
 
-✅ **Parents/Caregivers**: Learn early autism signs, when to seek screening  
-✅ **Educators**: Understand classroom accommodations and support strategies  
-✅ **Community Health Workers**: Provide evidence-based screening guidance  
-✅ **Students/Researchers**: Educational resource on autism screening practices  
+ **Parents/Caregivers**: Learn early autism signs, when to seek screening  
+ **Educators**: Understand classroom accommodations and support strategies  
+ **Community Health Workers**: Provide evidence-based screening guidance  
+ **Students/Researchers**: Educational resource on autism screening practices  
 
-❌ **NOT for**:
+ **NOT for**:
 - Medical diagnosis
 - Treatment recommendations
 - Replacing professional healthcare advice
 
 ---
 
-## 🔐 Safety & Ethics
+##  Safety & Ethics
 
 ### Implemented Safeguards
 1. **Medical Disclaimer**: Every response includes a clear notice
@@ -211,7 +211,7 @@ This chatbot is designed for:
 
 ---
 
-## 📦 Installation & Requirements
+##  Installation & Requirements
 
 ### Python Dependencies
 ```bash
@@ -233,7 +233,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 This is an educational project. Contributions welcome for:
 - Dataset expansion (more diverse examples)
@@ -254,20 +254,20 @@ Please ensure all contributions maintain the ethical guidelines and medical disc
 
 ---
 
-## 📄 License
+##  License
 
 This project is for educational purposes. The Gemma model is subject to its own license terms. Dataset and code are provided as-is for academic use.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **RELEBOHILE PHEKO**  
 GitHub: [@RELEBOHILE-PHEKO](https://github.com/RELEBOHILE-PHEKO)
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Google**: For releasing Gemma models
 - **HuggingFace**: For transformers, PEFT, and TRL libraries
